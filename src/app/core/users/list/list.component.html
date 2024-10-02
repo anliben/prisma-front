@@ -1,0 +1,10 @@
+<po-page-default p-label="Listagem de itens">
+  <po-button
+  p-label="Adicionar"
+  (p-click)="add()"
+  ></po-button>
+<po-table
+  [p-items]="users"
+  [p-actions]="actions"
+></po-table>
+</po-page-default>

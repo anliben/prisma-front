@@ -1,0 +1,14 @@
+<po-breadcrumb
+  [p-items]="[
+    { label: 'home', link: '/' },
+    { label: 'Criar usuário', link: '/new' }
+  ]"
+>
+</po-breadcrumb>
+<po-dynamic-form
+  #dynamicForm
+  (p-form)="getForm($event)"
+  [p-fields]="fields"
+></po-dynamic-form>
+
+<po-button p-label="Adicionar" (p-click)="submit()"></po-button>

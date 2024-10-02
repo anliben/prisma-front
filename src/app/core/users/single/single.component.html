@@ -1,0 +1,10 @@
+<po-breadcrumb
+  [p-items]="[
+    { label: 'home', link: '/' },
+    { label: 'Informação de usuário', link: '/info/{{this.id}}' }
+  ]"
+>
+</po-breadcrumb>
+<po-dynamic-view
+  [p-value]="user"
+></po-dynamic-view>
